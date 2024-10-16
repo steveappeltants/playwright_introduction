@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Globoticket</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<div class="container">
+	<header>
+		<h1><img src="img/globoticket-horizontal-white.svg"></h1>
+		<div class="header-cart">
+			<img src="img/cart.svg"/>
+			<p><span>0</span> tickets</p>
+		</div>
+	</header>
+	<section class="section-details">
+		<div class="details-left">
+			<img src="img/shutterstock_415922566_details_page.jpg" id="event-image"/>
+		</div>
+		<div class="details-right">
+			<p class="event-type" id="event-type">Concerts</p>
+			<h2 id="event-name" data-testid="event-name">Event Name</h2>
+			<h3 id="event-artist" data-testid="event-artist">Event Artist</h3>
+			<p class="event-date" id="event-date" data-testid="event-date">Event Date</p>
+			<p class="event-description" id="event-description" data-testid="event-description">Event Description</p>
+			<div class="event-price-container">
+				<p class="event-price" id="event-price" data-testid="event-price">$0</p>
+				<p class="event-per-ticket">per ticket</p>
+			</div>
+		</div>
+	</section>
+	<section class="section-details divider"></section>
+	<section class="section-details">
+		<div class="details-left"></div>
+		<div class="details-right details-right-purchasing">
+			<p id="label_qty">Quantity</p>
+			<label for="quantity"></label><select name="quantity-dropdown" id="quantity" data-testid="quantity">
+				<option selected value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<div class="event-purchase-button">
+				<button id="place-order" data-testid="place-order">Place Order</button>
+			</div>
+		</div>
+	</section>
+</div>
+<script src="js/events.js"></script>
+<script src="js/details.js"></script>
+</body>
+</html>
