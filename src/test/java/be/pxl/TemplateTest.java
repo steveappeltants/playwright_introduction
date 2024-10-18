@@ -12,7 +12,6 @@ import org.junit.jupiter.api.BeforeEach;
 
 class TemplateTest {
 
-	// Shared between all tests in this class.
 	private static Playwright playwright;
 	private static Browser browser;
 	private String URL = "http://localhost:5001/app/catalog.html";

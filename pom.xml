@@ -19,7 +19,8 @@
 			<groupId>com.microsoft.playwright</groupId>
 			<artifactId>playwright</artifactId>
 			<version>1.47.0</version>
-			<scope>test</scope>
+			<!-- Remove <scope>test</scope> if it's needed in runtime -->
+<!--			<scope>test</scope>-->
 		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>

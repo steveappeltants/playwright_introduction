@@ -15,8 +15,8 @@ public class FirstPlaywrightTest {
 	@Test
 	public void firstTest() {
 		try (Playwright pw = Playwright.create()) { // guarantee the browser and pages will be closed in the end
-			//BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions().setHeadless(false);
-			Browser browser = pw.chromium().launch();
+			BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions().setHeadless(false);
+			Browser browser = pw.chromium().launch(launchOptions);
 			Page page = browser.newPage();
 			page.navigate("https://www.lambdatest.com/");
 			System.out.println("title " + page.title());
@@ -36,5 +36,4 @@ public class FirstPlaywrightTest {
 			}
 		}
 	}
-
 }
