@@ -6,12 +6,8 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import org.junit.jupiter.api.Test;
 
-import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.List;
 
-
-public class Task1 {
+public class TestTask1 {
 
     @Test
     public void differentBrowsers() {

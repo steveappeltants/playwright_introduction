@@ -11,7 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 
-class Task2 {
+class TestTask2 {
 
     // To run this command before writing the test:
     // mvn exec:java -e -D exec.mainClass=com...
@@ -39,7 +39,7 @@ class Task2 {
     }
 
     @Test
-    void navigateCatalog() {
+    void eventListCount() {
         try {
             context = browser.newContext();
             page = context.newPage();
@@ -72,8 +72,6 @@ class Task2 {
 
     @AfterEach
     void closeContext() {
-        if (context != null) {
-            context.close();
-        }
+        context.close();
     }
 }

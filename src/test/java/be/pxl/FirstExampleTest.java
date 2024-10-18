@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import org.junit.jupiter.api.Test;
 
-class FirstExample {
+public class FirstExampleTest {
     @Test
     public void firstTest() {
         try (Playwright pw = Playwright.create()) {
