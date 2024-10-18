@@ -1,4 +1,27 @@
 -------------------------------------------------------------------------------
 Test set: be.pxl.TestTask3
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.835 s -- in be.pxl.TestTask3
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.06 s <<< FAILURE! -- in be.pxl.TestTask3
+be.pxl.TestTask3.basketQuantity -- Time elapsed: 30.67 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+Test failed due to unexpected exception: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\11903768\AppData\Local\Temp\playwright-java-14192926511285376606\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\11903768\AppData\Local\Temp\playwright-java-14192926511285376606\package\lib\server\frames.js:1464:23)
+    at Frame.innerText (C:\Users\11903768\AppData\Local\Temp\playwright-java-14192926511285376606\package\lib\server\frames.js:1083:17)
+    at FrameDispatcher.innerText (C:\Users\11903768\AppData\Local\Temp\playwright-java-14192926511285376606\package\lib\server\dispatchers\frameDispatcher.js:185:32)
+    at FrameDispatcher._handleCommand (C:\Users\11903768\AppData\Local\Temp\playwright-java-14192926511285376606\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\11903768\AppData\Local\Temp\playwright-java-14192926511285376606\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("internal:attr=[data-testid=\".quantity-dropdown\"]")
+
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at be.pxl.TestTask3.basketQuantity(TestTask3.java:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
