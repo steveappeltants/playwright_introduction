@@ -40,11 +40,16 @@ class TestTask3 {
             page.getByTestId("place-order").click();
             page.getByTestId("quantity-dropdown").selectOption("4");
             page.getByTestId("update-button").click();
+            page.getByTestId("event-total").click();
+
             // Arrange
-            String ticketCountValue = page.locator("#ticket-count").innerText();  // Correct the selector
+            String ticketCountValue = page.locator("#ticket-count").innerText();
+            String eventTotal = page.locator(".event-total").innerText();
             // Assert
             assertEquals(ticketCountValue, "4");
+            assertEquals(eventTotal, "$260.00");
             System.out.println("Updated basket ticket value is: " + ticketCountValue);
+            System.out.println("Updated event total amount is: " + eventTotal);
 
         } catch (Exception e) {
             Assertions.fail("Test failed due to unexpected exception: " + e.getMessage());
