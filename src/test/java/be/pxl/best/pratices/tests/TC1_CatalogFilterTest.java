@@ -1,5 +1,7 @@
-package be.pxl.best.pratices;
+package be.pxl.best.pratices.tests;
 
+import be.pxl.best.pratices.utils.BrowserFactory;
+import be.pxl.best.pratices.pages.CatalogPage;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Playwright;
@@ -13,7 +15,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class CatalogFilterTest {
+public class TC1_CatalogFilterTest {
 
 	// Shared between all tests in this class.
 	private static Playwright playwright;
